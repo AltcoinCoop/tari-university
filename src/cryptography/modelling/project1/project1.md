@@ -16,4 +16,5 @@ Assuming that 1000 nodes randomly divided into 1000 shards. What is the number o
 
 # Birthday problem 
 
-This is a common question in probability studies 
+This is a common question in probability studies. This will now be discussed
+
