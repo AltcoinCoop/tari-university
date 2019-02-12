@@ -1,5 +1,7 @@
 # Modeling 
 
+What is the percentage chance is there that a malicious actor controls majority of
+
 ## Abstract 
 
 This paper sees the introduction of tools to model and describe the network attacks, allowing for the visualization and quantification of the threat on the blockchain. The model is used to describe the attacks. In this report we describe ways of using the model introduced and to quantify the risks of an attach by means of economic analysis. 
@@ -8,3 +10,8 @@ An urn contains N marbles of two possible colors. We have NB black marbles and N
 
 
 
+Assuming that 1000 nodes randomly divided into 1000 shards. What is the number of malicious nodes, such that the situation where at least one shard having 51% or more malicious nodes with probability p?
+
+
+
+Birthday problem 
