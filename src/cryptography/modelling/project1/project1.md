@@ -1,20 +1,52 @@
 # Modeling 
 
-What is the percentage chance is there that a malicious actor controls majority of
+- [Abstract](#abstract)
+
+- [Question](#question)
+
 
 ## Abstract 
 
 This paper sees the introduction of tools to model and describe the network attacks, allowing for the visualization and quantification of the threat on the blockchain. The model is used to describe the attacks. In this report we describe ways of using the model introduced and to quantify the risks of an attach by means of economic analysis. 
 
-An urn contains N marbles of two possible colors. We have NB black marbles and NW white marbles, where NB+NW=N is fixed. We draw M marbles from the urn. What is the probability that all of the marbles we drew from the urn are black? What is the probability that all of the marbles are white? If 0<m<M, what is the probability that we have m black marbles and M-m white marbles?
+#### Question 
+
+What is the probability that a malicious actor can control a majority of nodes in a randomly selected committee?
 
 
 
-Assuming that 1000 nodes randomly divided into 1000 shards. What is the number of malicious nodes, such that the situation where at least one shard having 51% or more malicious nodes with probability p?
+Variables 
+
+- N= total available nodes 
+- m= malicious nodes 
+- n= committee size
+- qp= minimum quorum percentage (50.1% and 66.7%)
+
+#### Answer 
+
+- N=100
+- m= 10 (10% of the total available nodes are malicious)
+- Randomly selected committee size =10 nodes 
+- qp= 50.1% ($ 10 x 0.501=5.01 $ ) should we be saying 51%?
+- What is the probability that you get at least six malicious node in the randomly chosen committee (what is the probability that a malicious actor can control a majority of nodes in a randomly selected committee?) 
+
+You can choose 6 malicious nodes in 10C6 ways 
+
+You can choose 10 nodes from the total nodes in 100C10 ways 
+
+Thus 
+$$
+\frac
+{\begin{array}{c}
+10\\6
+\end{array}}
+{\begin{array}{c}
+100\\10
+\end{array}}
+$$
+So the required probability is 
+
+$ 1.21E-11$
 
 
-
-# Birthday problem 
-
-This is a common question in probability studies. This will now be discussed
 
