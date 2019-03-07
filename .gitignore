@@ -2,3 +2,8 @@
 book
 .DS_Store
 .idea
+*.iml
+.vs/
+*.userprefs
+.vscode/
+*.code-workspace
